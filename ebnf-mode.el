@@ -32,7 +32,7 @@
 (define-generic-mode 'ebnf-mode
   '(("(*" . "*)"))
   '("=")
-  '(("^[^=]+" . font-lock-variable-name-face)
+  '(("^[^ \t\n][^=]+" . font-lock-variable-name-face)
     ("['\"].*?['\"]" . font-lock-string-face)
     ("\\[\\|\\]\\|{\\|}\\|(\\|)\\|\\?\\||\\|,\\|;" . font-lock-type-face)
     ("[^ \t\n]" . font-lock-function-name-face))
